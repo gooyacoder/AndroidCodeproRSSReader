@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Feed item to delete:"
+        android:id="@+id/lbl_view"
+        android:layout_weight=".5"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"/>
+
+
+    <ListView
+        android:id="@+id/feeds_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:choiceMode="singleChoice"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginTop="25dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_delete"
+            android:textAllCaps="false"
+            android:text="Delete"
+            android:onClick="btn_delete_clicked"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exit_btn"
+            android:text="Exit"
+            android:textAllCaps="false"
+            android:layout_alignParentLeft="true"
+            android:onClick="exit_btn_clicked"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
